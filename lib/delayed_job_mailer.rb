@@ -10,11 +10,11 @@ module Delayed
             if ::Delayed::Mailer.excluded_environments && ::Delayed::Mailer.excluded_environments.include?(::RAILS_ENV.to_sym)
               orig_method_missing(method_symbol, *params)
             else
-              case method_symbol.id2name
+              case method_symbol.to_s
               when /^deliver_([_a-z]\w*)\!/
                 orig_method_missing(method_symbol, *params)
               when /^deliver_([_a-z]\w*)/
-                self.send_later("#{method_symbol}!", *params)
+                self.delay.send "#{method_symbol}!", *params
               else
                 orig_method_missing(method_symbol, *params)
               end
