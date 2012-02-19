@@ -1,0 +1,32 @@
+PATH
+  remote: .
+  specs:
+    delayed_job_mailer (0.1.0)
+      actionmailer (~> 2.3.5)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    actionmailer (2.3.5)
+      actionpack (= 2.3.5)
+    actionpack (2.3.5)
+      activesupport (= 2.3.5)
+      rack (~> 1.0.0)
+    activesupport (2.3.5)
+    diff-lcs (1.1.3)
+    rack (1.0.1)
+    rspec (2.7.0)
+      rspec-core (~> 2.7.0)
+      rspec-expectations (~> 2.7.0)
+      rspec-mocks (~> 2.7.0)
+    rspec-core (2.7.1)
+    rspec-expectations (2.7.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.7.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  delayed_job_mailer!
+  rspec
