@@ -10,3 +10,5 @@ task :spec do
     t.rspec_path = 'bundle exec rspec'
   end
 end
+
+task :default => :spec
