@@ -40,7 +40,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rspec-rails'
-  s.add_runtime_dependency 'actionmailer', '~> 2.3.5'
+  s.add_runtime_dependency 'actionmailer', '< 3.1.0'
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
